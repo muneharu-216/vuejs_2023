@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Vue.js 演習問題</title>
+    <link rel="stylesheet" href="style.css" >
+    <script src=
+      "https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js">
+    </script>
+  </head>
+  
+  <body>
+    <h2>チェックボックスのONOFFを調べる例</h2>
+    <div id="app">
+        <ol>良好で行きたい場所チェック</ol>
+        <li>
+            <input type="checkbox" value="北海道" v-model="myTravel">
+            北海道
+        </li>
+        <li>
+            <input type="checkbox" value="東北" v-model="myTravel">
+            北海道
+            </li>
+            <li>
+            <input type="checkbox" value="関東" v-model="myTravel">
+            北海道
+            </li>
+            <li>
+            <input type="checkbox" value="東海" v-model="myTravel">
+            北海道
+            </li>
+            <li>
+            <input type="checkbox" value="甲信越" v-model="myTravel">
+            北海道
+            </li>
+            <li>
+            <input type="checkbox" value="中部" v-model="myTravel">
+            北海道
+            </li>
+            <li>
+            <input type="checkbox" value="近畿" v-model="myTravel">
+            北海道
+            </li>
+            <li>
+            <input type="checkbox" value="北陸" v-model="myTravel">
+            北海道
+            </li>
+            <li>
+            <input type="checkbox" value="中国・四国" v-model="myTravel">
+            北海道
+            </li>
+            <li>
+            <input type="checkbox" value="九州・沖縄" v-model="myTravel">
+            北海道
+            </li>
+        <p>チェックボックスは{{ myTravel }}です</p>
+
+
+
+    </div>
+
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                myTravel: []
+            }
+
+
+        })
+    </script>
+
+    </body>
+</html>
