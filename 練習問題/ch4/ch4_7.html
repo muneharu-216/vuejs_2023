@@ -14,17 +14,17 @@
     <div id="app">
       <h3>是非とも入社したい世界的IT企業</h3>
       <ul>
-        
-
-
-
-
-
-
-
-
+        <li>
+          <input type="radio" value="Yahoo.jpg" v-model="fileName">{{ Yahoo }}
+        </li>
+        <li>
+          <input type="radio" value="Google.jpg" v-model="fileName">{{ Google }}
+        </li>
+        <li>
+          <input type="radio" value="Microsoft.jpg" v-model="fileName">{{ Microsoft }}
+        </li>
       </ul>
-      <img ＿＿＿（１）＿＿＿></img>
+      <img :src="fileName"></img>   
     </div>
 
     <script>
