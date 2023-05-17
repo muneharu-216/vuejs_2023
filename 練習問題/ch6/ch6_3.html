@@ -8,20 +8,14 @@
         "https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js">
     </script>
     </head>
-
+    
     <body>
-    <h2>trueのときだけ表示する例</h2>
+    <h2>配列データを、リストで表示する例</h2>
     <div id="app">
-        <input type="checkbox" v-model="myVisible">Google本社
-        <p v-if="myVisible">
-            <img :src="googleImg"></img>
-        </p>
-        <p v-else>
-            <img :src="microsoftImg"></img>
-        </p>
-
-
-
+        <h2>東北６県基本情報</h2>
+        <li v-for="name in prefecture">
+            県名：{{ name }}
+        </li>
 
 
 
@@ -33,9 +27,7 @@
         new Vue({
         el: '#app',
         data: {
-            myVisible: false,
-            googleImg: 'Google.jpg',
-            microsoftImg: 'Microsoft.jpg'
+            prefecture: ["青森県","岩手県","秋田県","宮城県","山形県","福島県",]
         }
         })
     </script>
